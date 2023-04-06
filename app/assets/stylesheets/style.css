@@ -1,0 +1,13 @@
+.field-br {
+  word-break: break-all; 
+}
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+}
+
+.block input:checked + span {text-decoration: line-through;
+}
+
+span {
+  text-align:center;
+}

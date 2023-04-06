@@ -1,0 +1,45 @@
+<div id="<%= dom_id task %>">
+
+<td>
+
+
+  <div class="block">
+  <%= form_with(model: task, class:"text-lg inline-block my-3 w-72") do |form| %>
+
+    <%= form.check_box :done, data: {id: task.id, action: "tasks#toggle"}, class: "form-check-input mt-0" %>
+    <span>
+      <%= task.task_description %>
+    </span>
+  <% end %>
+        
+</div>
+
+<!-- <div class="block">
+    <% if task.done == true%>
+    <input class="form-check-input mt-0" type="checkbox"  checked aria-label="Checkbox for following text input"> 
+    <% else %>
+    <input class="form-check-input mt-0" type="checkbox"  aria-label="Checkbox for following text input">
+    <% end %> 
+        <span>
+      <%= task.task_description %>
+    </span> -->
+    
+</div>
+
+</td>
+
+
+  <td>
+    
+
+  </td>
+
+  <td>
+        <% if task.date != nil %>
+          <%= task.date %>
+        <% else %>
+          <%= "No deadline" %>
+        <% end %>  
+  </td>
+
+</div>

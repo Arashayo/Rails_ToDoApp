@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  done: false
+  task_description: MyString
+  date: 2023-03-20
+
+two:
+  done: false
+  task_description: MyString
+  date: 2023-03-20
